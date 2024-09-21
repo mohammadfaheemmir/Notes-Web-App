@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color : #a393eb;
+    --secondary-color : #fb7777;
+    --ternary-color : #081f37;
+    --fouranary-color : #ff4057;
+    --fifthnary-color : #ff5d9e;
+}
+
+#main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.note{
+    width: 400px;
+    height: 400px;
+    margin: 15px;
+    margin-top: 50px;
+
+}
+
+i{
+    color: #000;
+}
+
+.tool{
+    width: 100%;
+    background-color: var(--fifthnary-color);
+    color: #fff;
+    /* height: 40px; */
+    padding: 5px;
+    display: flex;
+    justify-content: end;
+}
+
+.tool i{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.note textarea{
+    border: none;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #081f37;
+    color: #fff;
+}
+
+#addBtn{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    background-color: var(--secondary-color);
+    color: var(--ternary-color);
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+}
